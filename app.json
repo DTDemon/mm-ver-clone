@@ -1,0 +1,37 @@
+{
+  "name": "TelegramCloneBotMMversion",
+  "description": "မူရင်းSource https://github.com/jagrit007, MMvsersionModify by https://t.me/drivetalk admin Ko KZT",
+  "logo": "",
+  "keywords": [
+    "telegram",
+    "clone",
+    "google drive",
+    "clone bot"
+  ],
+  "repository": "https://github.com/publicmm9/TgCloneMyanmarSa",
+  "website":   "https://github.com/publicmm9/TgCloneMyanmarSa",
+  "success_url": "https://t.me/",
+  "env": {
+    "BOT_TOKEN": {
+      "description": "t.me/BotFather မှ ရသော bot token ထည့်ပါ။",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "t.me/MissRose_bot မှ ရသော id ထည့်ပါ။",
+      "value": "",
+      "required": true
+    },
+    "ACCOUNTS_ZIP_URL": {
+      "description": "t.me/DirectLinkGeneratorbot မှ ရသော zip link ကိုဖြည့်ပါ။",
+      "required": true
+    },
+    "Token_Pickle_URL": {
+      "description": "မဖြည့်လဲရပါသည်။",
+      "required": false
+    }
+  },
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
+}
