@@ -9,7 +9,7 @@ from bot.clone_status import CloneStatus
 from bot.msg_utils import deleteMessage, sendMessage
 import time
 
-REPO_LINK = "https://github.com/jagrit007/Telegram-CloneBot"
+REPO_LINK = "https://github.com/thantzinmyothant1/MM-Ver-Clone-Bot"
 # Soon to be used for direct updates from within the bot.
 
 @run_async
@@ -21,7 +21,7 @@ def start(update, context):
 
 @run_async
 def helper(update, context):
-    sendMessage("မင်္ဂလာပါ ဒီ 🤖  🤖 လေးမှာအသုံးပြုလိုရတဲ့ commands များကိုအောက်မှာလေ့လာနိုင်ပါတယ်..အရင်ဆုံး thantzinmyotelbot@googlegroups.com ကို ကူးမဲ့ Drive ရယ် လက်ခံမည့် Drive မှာ content manager အပ်ထားပေးပါ။\n\n" \
+    sendMessage("မင်္ဂလာပါ ဒီ 🤖 Bot 🤖 လေးမှာအသုံးပြုလိုရတဲ့ commands များကိုအောက်မှာလေ့လာနိုင်ပါတယ်..အရင်ဆုံး thantzinmyotelbot@googlegroups.com ကို ကူးမဲ့ Drive ရယ် လက်ခံမည့် Drive မှာ content manager အပ်ထားပေးပါ။\n\n" \
         "*အသုံးပြုနည်း:* `/clone <link> [DESTINATION_ID]`\n*ဥပမာ:* \n1. `/clone https://drive.google.com/drive/u/1/folders/0AO-ISIXXXXXXXXXXXX`\n2. `/clone 0AO-ISIXXXXXXXXXXXX`" \
             "\n*DESTIONATION_ID* is optional. It can be either link or ID to where you wish to store a particular clone." \
             "\n\nYou can also *ignore folders* from clone process by doing the following:\n" \
@@ -67,7 +67,7 @@ def sendCloneStatus(update, context, status, msg, link):
     while not status.done():
         sleeper(3)
         try:
-            text=f'🔗 *ကူးနေခြင်း:* [{status.MainFolderName}]({status.MainFolderLink})\n━━━━━━━━━━━━━━\n🗃️ *ကူးနေသောဖိုင်:* `{status.get_name()}`\n⬆️ *မိမိ Driveထဲရောက်သွားသောပမာဏ*: `{status.get_size()}`\n📁 *မိမိDriveမှFolder:* [{status.DestinationFolderName}]({status.DestinationFolderLink})'
+            text=f'🔗 *ကူးနေခြင်း:* [{status.MainFolderName}]\n━━━━━━━━━━━━━━\n🗃️ *ကူးနေသောဖိုင်:* `{status.get_name()}`\n⬆️ *မိမိ Driveထဲရောက်သွားသောပမာဏ*: `{status.get_size()}`\n📁 *မိမိDriveမှFolder:* [{status.DestinationFolderName}]'
             if status.checkFileStatus():
                 text += f"\n🕒 *ရှိပြီးသားဖိုင်များကိုစစ်ဆေးခြင်း:* `{str(status.checkFileStatus())}`"
             if not text == old_text:
