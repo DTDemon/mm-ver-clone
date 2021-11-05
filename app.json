@@ -1,6 +1,6 @@
 {
   "name": "TelegramCloneBotMMversion",
-  "description": "မူရင်းSource https://github.com/jagrit007, MMvsersionModify by https://t.me/drivetalk admin Ko KZT",
+  "description": "မူရင်းSource https://github.com/jagrit007, MMvsersionModify by https://t.me/Double T",
   "logo": "",
   "keywords": [
     "telegram",
@@ -20,7 +20,7 @@
     "OWNER_ID": {
       "description": "t.me/MissRose_bot မှ ရသော id ထည့်ပါ။",
       "value": "",
-      "required": true
+      "required": false
     },
     "ACCOUNTS_ZIP_URL": {
       "description": "t.me/DirectLinkGeneratorbot မှ ရသော zip link ကိုဖြည့်ပါ။",
